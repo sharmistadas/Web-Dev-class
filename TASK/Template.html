@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ABC College</title>
+</head>
+<body>
+
+  <!-- ===================== HEADER: logo + college name ===================== -->
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/2995/2995400.png" alt="ABC College Logo" width="80" height="80">
+    <h1>ABC College</h1>
+  </header>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <h2>About Our College</h2>
+  <p>
+    ABC College is committed to providing quality education and holistic development to students.
+    Our experienced faculty, modern infrastructure, and student-centered approach help in shaping
+    the future leaders of tomorrow.
+  </p>
+
+  <!-- ===================== COURSES OFFERED (nested ordered/unordered list) ===================== -->
+  <h2>Courses Offered</h2>
+  <ol>
+    <li>Bachelor of Computer Applications (BCA)
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Database Management</li>
+      </ul>
+    </li>
+    <li>Bachelor of Science (BSc)
+      <ul>
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Mathematics</li>
+        <li>Biology</li>
+      </ul>
+    </li>
+    <li>Bachelor of Commerce (BCom)
+      <ul>
+        <li>Accounting</li>
+        <li>Business Studies</li>
+        <li>Economics</li>
+        <li>Marketing</li>
+      </ul>
+    </li>
+  </ol>
+
+  <!-- ===================== STUDENT PERFORMANCE TABLE ===================== -->
+  <h2>Student Performance</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Roll No</th>
+        <th>Student Name</th>
+        <th>Course</th>
+        <th>Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>101</td><td>Rahul Sharma</td><td>BCA</td><td>85%</td></tr>
+      <tr><td>102</td><td>Priya Singh</td><td>BSc</td><td>90%</td></tr>
+      <tr><td>103</td><td>Amit Verma</td><td>BCom</td><td>88%</td></tr>
+      <tr><td>104</td><td>Neha Gupta</td><td>BCA</td><td>92%</td></tr>
+      <tr><td>105</td><td>Vikram Mehta</td><td>BSc</td><td>78%</td></tr>
+      <!-- Footer row showing total student count -->
+      <tr>
+        <td><strong><u>Total Students</u></strong></td>
+        <td></td>
+        <td>5</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ===================== ADMISSION FORM ===================== -->
+  <h2>Admission Form</h2>
+  <form>
+
+    <!-- ---- Personal Details fieldset ---- -->
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="mobile">Mobile Number:</label><br>
+      <input type="tel" id="mobile" name="mobile"><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" name="gender" value="male" id="male"> <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label>
+      <input type="radio" name="gender" value="other" id="other"> <label for="other">Other</label>
+    </fieldset>
+
+    <br>
+
+    <!-- ---- Course & Hobbies fieldset ---- -->
+    <fieldset>
+      <legend>Course &amp; Hobbies</legend>
+
+      <label for="course">Select Course:</label><br>
+      <select id="course" name="course">
+        <option value="">-- Select Course --</option>
+        <option value="bca">BCA</option>
+        <option value="bsc">BSc</option>
+        <option value="bcom">BCom</option>
+      </select>
+
+      <br><br>
+
+      <label>Hobbies:</label><br>
+      <input type="checkbox" name="hobbies" value="reading" id="reading"> <label for="reading">Reading</label>
+      <input type="checkbox" name="hobbies" value="sports" id="sports"> <label for="sports">Sports</label>
+      <input type="checkbox" name="hobbies" value="music" id="music"> <label for="music">Music</label>
+      <input type="checkbox" name="hobbies" value="traveling" id="traveling"> <label for="traveling">Traveling</label>
+
+      <br><br>
+
+      <label for="address">Address:</label><br>
+      <textarea id="address" name="address" rows="4" cols="40"></textarea>
+    </fieldset>
+
+    <br>
+
+    <!-- ---- Declaration fieldset ---- -->
+    <fieldset>
+      <legend>Declaration</legend>
+      <p>I hereby declare that the above information is true and correct.</p>
+      <input type="checkbox" name="agree" id="agree"> <label for="agree">I Agree</label>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+  <!-- ===================== COLLEGE CAMPUS VIDEO ===================== -->
+  <h3>College Campus Video</h3>
+  <video controls width="480" poster="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Big_buck_bunny_poster_big.jpg/500px-Big_buck_bunny_poster_big.jpg">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- ===================== COLLEGE ANTHEM AUDIO ===================== -->
+  <h3>College Anthem Audio</h3>
+  <audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <!-- ===================== FOOTER ===================== -->
+  <hr>
+  <p>&copy; 2026 ABC College. All Rights Reserved.</p>
+
+</body>
+</html>
