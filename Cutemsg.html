@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secret Message 🎀</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #ffeaf3, #ffd1e3);
+            overflow: hidden;
+        }
+
+        /* Floating hearts */
+        .heart {
+            position: absolute;
+            font-size: 25px;
+            animation: float 6s infinite ease-in-out;
+            opacity: 0.7;
+        }
+
+        .heart:nth-child(1) {
+            left: 10%;
+            top: 20%;
+            animation-delay: 0s;
+        }
+
+        .heart:nth-child(2) {
+            left: 80%;
+            top: 15%;
+            animation-delay: 1s;
+        }
+
+        .heart:nth-child(3) {
+            left: 15%;
+            bottom: 15%;
+            animation-delay: 2s;
+        }
+
+        .heart:nth-child(4) {
+            right: 12%;
+            bottom: 20%;
+            animation-delay: 3s;
+        }
+
+        .heart:nth-child(5) {
+            left: 50%;
+            top: 8%;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-25px) rotate(10deg);
+            }
+        }
+
+        /* Main card */
+        .card {
+            width: 90%;
+            max-width: 430px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(190, 80, 120, 0.2);
+            position: relative;
+            z-index: 2;
+            animation: appear 1s ease;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.85);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .top {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #e75480;
+            font-size: 27px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            border: none;
+            background: #ff6f9c;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 6px 15px rgba(255, 111, 156, 0.3);
+        }
+
+        button:hover {
+            transform: scale(1.07);
+            background: #ff4f87;
+        }
+
+        /* Hidden message */
+        #message {
+            display: none;
+            margin-top: 25px;
+            animation: pop 0.7s ease;
+        }
+
+        @keyframes pop {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message-text {
+            color: #555;
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        .cute {
+            color: #e75480;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 12px 0;
+        }
+
+        .small {
+            color: #999;
+            font-size: 14px;
+            margin-top: 18px;
+        }
+
+        .signature {
+            margin-top: 20px;
+            color: #e75480;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating decorations -->
+    <div class="heart">💗</div>
+    <div class="heart">🎀</div>
+    <div class="heart">💖</div>
+    <div class="heart">💕</div>
+    <div class="heart">✨</div>
+
+    <div class="card">
+
+        <div class="top">🎀</div>
+
+        <h1>Congratulations!</h1>
+
+        <p class="subtitle">
+            You found the secret message. 👀
+        </p>
+
+        <button onclick="showMessage()">
+            Open it 🤭
+        </button>
+
+        <div id="message">
+
+            <p class="message-text">
+                Unfortunately, the message is...
+            </p>
+
+            <p class="cute">
+                I think you're kinda cute. 💗
+            </p>
+
+            <p class="message-text">
+                There. I said it. 😭
+            </p>
+
+            <br>
+
+            <p class="message-text">
+                Don't get too happy though...
+                <br>
+                ...unless you're smiling right now. 👀💗
+            </p>
+
+            <p class="small">
+                Okay bye before this gets embarrassing. 🫣
+            </p>
+
+            <p class="signature">
+                🎀 Secret message successfully delivered 🎀
+            </p>
+
+        </div>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+
+            document.querySelector("button").innerText =
+                "Oops... you found it 🤭";
+        }
+    </script>
+
+</body>
+</html>

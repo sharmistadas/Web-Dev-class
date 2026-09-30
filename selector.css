@@ -1,0 +1,16 @@
+
+#head2 {
+    background-color:black;
+    color: beige;
+
+}
+.malls{
+      background-color:black;
+    color: beige;
+}
+div>h1{
+    background-color: aquamarine;
+}
+h4~p{
+    background-color:magenta;
+}
