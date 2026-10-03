@@ -1,0 +1,72 @@
+/* nav>a:hover{
+    color: palevioletred;
+} */
+
+/* nav >a:active{
+    color: greenyellow;
+    background-color: coral;
+} */
+
+/* nav a:link{
+    color: black;
+}
+
+nav a:visited{
+    color: aquamarine;
+} */
+
+/* #username:focus{
+            background-color: purple;
+
+} */
+/* 
+p:last-of-type{
+    background-color: deepskyblue;
+}
+p:first-of-type{
+    background-color: deeppink;
+}
+
+h1:nth-child(odd){
+    background-color: gold;
+}
+h1:nth-of-type(3){
+    background-color: indigo;
+}
+h1:nth-child(even){
+    background-color: gold;
+} */
+/* 
+#sk:checked{
+    accent-color: green;
+}
+#file:disabled{
+    background-color: chocolate;
+} */
+
+/* h1::first-letter{
+    color: orange;
+}
+h5::first-line {
+    color: burlywood;
+}
+#first::after{
+content:"🥇";
+}
+#second::after{
+content:"🥇";
+}
+#third::after{
+content:"🥇";
+} */
+
+ul li::marker{
+    content: "🚩";
+}
+input::placeholder{
+    color: red;
+}
+
+input::file-selector-button{
+    background-color: green;
+}

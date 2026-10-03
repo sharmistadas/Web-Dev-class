@@ -1,0 +1,42 @@
+/* body {
+    background-color: antiquewhite;
+} */
+{
+    color: blue;
+    text-align: center;
+}
+
+.fest-header {
+    display: grid;
+    grid-template-columns: 2fr auto 2fr;
+    align-items: center;
+}
+
+.fest-header img {
+    width: 400px;
+    height: 300px;
+}
+
+#img1 {
+    justify-self: start;
+}
+
+#img2 {
+    justify-self: end;
+}
+
+h1{
+    color: red;
+}
+
+#inn{
+    color: rgb(8, 8, 123);
+}
+body {
+    text-align: center;
+}
+.nav{
+    justify-content: center;
+    
+    justify-content: space-between;
+}

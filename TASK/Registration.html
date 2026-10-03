@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .form-container { width: 100%; border: 1px solid #ccc; padding: 10px; }
+    .card { border: 1px solid #7ebf7e; border-radius: 8px; padding: 10px; margin: 5px; background-color: #f9fff9; vertical-align: top; }
+    .card-title { color: #2e7d32; font-weight: bold; margin-bottom: 10px; }
+    label { display: block; margin-top: 8px; font-size: 13px; font-weight: bold; }
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"], select, textarea {
+      width: 95%; padding: 4px; margin-top: 3px; font-size: 12px;
+    }
+           .nav{
+    justify-content: center;
+    
+    justify-content: space-between;
+}
+  </style>
+</head>
+
+<nav class="nav">
+    <a href="./TECHFEST.HTML">🏠 Home</a>
+    <a href="./About.html">📧 About</a>
+    <a href="./Event.html">🎯 Events</a>
+    <a href="">🕒 Schedule</a>
+    <a href="./Gallery.html">🌄 Gallery</a>
+    <a href="./Registration.html">📝 Registration</a>
+    <a href="">📞 Contact</a>
+    <br>
+</nav>
+<body>
+
+  <h2 align="center">📝 REGISTRATION FORM</h2>
+
+  <form>
+    <table class="form-container" border="0" cellpadding="0" cellspacing="5" width="100%">
+      <tr>
+        <!-- Personal Details -->
+        <td class="card" width="20%">
+          <div class="card-title">👤 Personal Details</div>
+          <label>First Name:</label>
+          <input type="text" name="firstname">
+          
+          <label>Last Name:</label>
+          <input type="text" name="lastname">
+          
+          <label>Email:</label>
+          <input type="email" name="email">
+          
+          <label>Password:</label>
+          <input type="password" name="password">
+          
+          <label>Confirm Password:</label>
+          <input type="password" placeholder='<input type="password" required>'>
+          
+          <label>Phone:</label>
+          <input type="tel" placeholder='<input type="tel" placeholder="10-digit number" required>'>
+          
+          <label>Date of Birth:</label>
+          <input type="date" name="dob">
+          
+          <label>Age:</label>
+          <input type="text" name="age">
+          
+          <label>Aadhaar:</label>
+          <input type="text" name="aadhaar">
+          
+          <label>Gender:</label>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other
+          
+          <label>Photo:</label>
+          <input type="file" accept="image/*">
+        </td>
+
+        <!-- Academic Details -->
+        <td class="card" width="20%">
+          <div class="card-title">🎓 Academic Details</div>
+          <label>College Name:</label>
+          <input type="text" name="college">
+          
+          <label>Course:</label>
+          <select name="course">
+            <option>-- Select Course --</option>
+          </select>
+          
+          <label>Department:</label>
+          <input type="text" name="department">
+          
+          <label>Year:</label>
+          <select name="year">
+            <option>-- Select Year --</option>
+          </select>
+          
+          <label>Roll Number:</label>
+          <input type="text" name="rollno">
+          
+          <label>CGPA:</label>
+          <input type="text" style="width: 50px;"> / 10
+        </td>
+
+        <!-- Event Selection -->
+        <td class="card" width="20%">
+          <div class="card-title">🎯 Event Selection</div>
+          <label>Select Events (Checkbox):</label>
+          <input type="checkbox"> Coding Challenge<br>
+          <input type="checkbox"> Web Design<br>
+          <input type="checkbox"> Robotics War<br>
+          <input type="checkbox"> Paper Presentation<br>
+          <input type="checkbox"> Gaming Arena<br>
+          <input type="checkbox"> Photography<br>
+          <input type="checkbox"> Dance Battle<br>
+          <input type="checkbox"> Singing Competition<br>
+          <input type="checkbox"> Treasure Hunt<br>
+
+          <label>Preferred Event (Radio):</label>
+          <input type="radio" name="pref_event"> Technical
+          <input type="radio" name="pref_event"> Cultural<br>
+
+          <label>Event Category (Select):</label>
+          <select name="category">
+            <option>-- Select Category --</option>
+          </select>
+
+          <label>Programming Languages you know:</label>
+          <select multiple size="6" style="width: 100%;">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>C++</option>
+            <option>Java</option>
+          </select>
+        </td>
+
+        <!-- Address & Social Media -->
+        <td class="card" width="20%">
+          <div class="card-title">📍 Address</div>
+          <label>Address:</label>
+          <textarea rows="3"></textarea>
+          
+          <label>State:</label>
+          <input type="text" name="state">
+          
+          <label>City:</label>
+          <input type="text" name="city">
+          
+          <label>Pincode:</label>
+          <input type="text" name="pincode">
+
+          <hr>
+          <div class="card-title">🔗 Social Media</div>
+          <label>LinkedIn:</label>
+          <input type="text" name="linkedin">
+          
+          <label>GitHub:</label>
+          <input type="text" name="github">
+          
+          <label>Portfolio Website:</label>
+          <input type="text" name="portfolio">
+        </td>
+
+        <!-- Additional Information -->
+        <td class="card" width="20%">
+          <div class="card-title">ℹ️ Additional Information</div>
+          <label>Favorite Programming Language:</label>
+          <input type="text" name="fav_lang">
+          
+          <label>Experience Level:</label>
+          <select name="exp_level">
+            <option>-- Select Level --</option>
+          </select>
+          
+          <label>Resume Upload:</label>
+          <input type="file" name="resume">
+          
+          <label>Preferred T-shirt Size:</label>
+          <select name="tshirt">
+            <option>-- Select Size --</option>
+          </select>
+          
+          <label>Meal Preference:</label>
+          <select name="meal">
+            <option>-- Select Option --</option>
+          </select>
+          
+          <label>Arrival Time:</label>
+          <input type="time" name="arrival_time">
+          
+          <label>Favorite Color:</label>
+          <input type="color" name="fav_color">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5" align="center" style="padding-top: 15px;">
+          <input type="submit" value="Submit Registration">
+          <input type="reset" value="Reset Form">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
