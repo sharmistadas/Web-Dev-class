@@ -14,3 +14,12 @@ div>h1{
 h4~p{
     background-color:magenta;
 }
+[class]{
+    background-color: aqua;
+}
+[class='q']{
+    background-color: antiquewhite;
+}
+[id='head6'] {
+    background-color: blue;
+}
