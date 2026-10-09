@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+.container{
+height: 100vh;
+width:100vw;
+background-color: black;
+}
+.box {
+    height:30%;
+    width: 60%;
+    background-color: goldenrod;
+}
+.box2{
+    height: 50vmax;
+    width: 50vmax;
+    background-color: brown;
+}
+h2{
+    /* color: rgba(255, 255, 0, 0.214); */
+    /* color: hsl(33, 100%, 60%); */
+    color: hsla(33, 100%, 60%, 0.822);
+    color: yellow;
+}
+
+p{
+    color: burlywood;
+}
