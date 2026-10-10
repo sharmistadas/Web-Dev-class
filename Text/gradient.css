@@ -1,11 +1,14 @@
-.box1{
-    height: 300px;
-    width: 300px;
-    background: linear-gradient(45deg, pink,yellow,skyblue,orange);
-}
-.box2{
-    height: 300px;
-    width: 300px;
-    background: linear-gradient(orange,yellow,red,orange);
 
+h2{
+    font-size: 4em;
+    background : linear-gradient(pink,rgb(104,3,104),red,rgb(228, 105, 10),rgb(210,17,27));
+    background-clip: text;
+    color:transparent;
+}
+
+h4{
+  font-size: 4em;
+    background : linear-gradient(pink,rgb(104,3,104),red,rgb(228, 105, 10),rgb(210,17,27));
+    background-clip: text;
+    color:transparent;
 }
