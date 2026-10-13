@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.Container{
+
+    height: 400px;
+    width:900px;
+    margin:100px auto;
+    background-color: lightcoral;
+    position: relative;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+body{
+    height: 300vh;
+    background-color: gray;
+}
+.b1{
+    height:100px;
+    width: 100px;
+    border-radius:50%;
+    background-color: aqua;
+    position:fixed;
+    top:300px;
+    right:20px;
+}
+nav{
+    padding: 40px;
+    background-color: rgb(86,196,196);
+    position:sticky;
+    top:0;
+}
+.card{
+    height: 250px;
+    width:350;
+    background-color: rgb(222,130,9);
+    border-radius: 30px;
+    position:absolute;
+    top:130px;
+}
