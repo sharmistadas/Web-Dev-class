@@ -1,0 +1,24 @@
+nav>a{
+    background-color: gold;
+    display: block;
+}
+h2{
+    background-color: deeppink;
+    display: inline;
+    height: 300px;
+    width: 500px;
+}
+
+p{
+    background-color: hotpink;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+.b1{
+    background-color: salmon;
+    display: none;
+}
+.b2{
+    background-color: aquamarine;
+}
