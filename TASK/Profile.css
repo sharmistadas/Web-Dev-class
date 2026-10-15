@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111827;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    min-height: 430px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 15px #ccc;
+}
+
+.box {
+    height: 110px;
+    background: linear-gradient(to right, purple, blue);
+}
+
+.circle {
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: -35px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 3px 8px #bbb;
+}
+
+.content {
+    padding: 42px 20px 18px;
+    text-align: center;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.role {
+    margin: 5px 0 0;
+    color: #7654ed;
+    font-size: 13px;
+}
+
+.skills {
+    margin: 30px 0 16px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.skills span {
+    color: #8b5cf6;
+}
+
+.stats {
+    display: flex;
+    gap: 10px;
+}
+
+.stat {
+    flex: 1;
+    padding: 10px 5px;
+    border: 1px solid #d6d2e2;
+    border-radius: 8px;
+}
+
+.stat h2 {
+    margin: 0 0 5px;
+    font-size: 9px;
+}
+
+.stat-value {
+    margin: 0;
+    color: #7044f5;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.stat-detail {
+    margin: 3px 0 0;
+    color: #777;
+    font-size: 9px;
+}
+
+.profile-link {
+    display: block;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 7px;
+    background: linear-gradient(to right, purple, blue);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+}

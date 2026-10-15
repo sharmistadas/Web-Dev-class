@@ -22,10 +22,46 @@
 
 }
 
+
 .box:hover img{
     /* transform: scale(1.2); */
     transform: skew(45deg);
     transform: skewX(45deg);
     transform: skewY(45deg);
 
+}
+
+.card-container{
+    height: 300px;
+    width: 250px;
+    margin: 200px auto;
+    perspective: 1000px;
+}
+
+.card{
+     height: 100%;
+     width: 250%;
+     transform-style: preserve-3d;
+     position: relative;
+     transition: transform 3s;
+}
+
+.front{
+    background-color: rgb(230, 173, 210);
+}
+.back{
+    background-color: rgb(217, 255, 122);
+    transform: rotateY(180deg);
+}
+
+.front , .back{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-container:hover .card{
+     transform: rotateY(180deg)translateZ(500px)rotateZ(45deg);
 }
