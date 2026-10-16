@@ -1,0 +1,27 @@
+.container{
+    height: 600px;
+    width: 900px;
+    background-color: rgb(208, 225, 220);
+    margin: 50px auto;
+    font-size: 3em;
+    color:azure;
+    display: flex;
+    flex-direction: row;
+    /* gap: 50px; */
+    justify-content: space-around;
+    align-items: center;
+}
+.box{
+    height: 150px;
+    width: 150px;
+}
+
+.b1{
+    background-color: greenyellow;
+}
+.b2{
+    background-color: rgb(234, 131, 7);
+}
+.b3{
+    background-color: rgb(251, 251, 0);
+}
