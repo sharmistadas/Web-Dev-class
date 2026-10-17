@@ -1,15 +1,15 @@
 .container{
-    height: 600px;
-    width: 900px;
+    height: 200px;
+    width: 600px;
     background-color: rgb(208, 225, 220);
     margin: 50px auto;
     font-size: 3em;
     color:azure;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    /* gap: 50px;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     flex-wrap: wrap;
     align-content: space-evenly;
 }
@@ -20,19 +20,25 @@
 
 .b1{
     background-color: greenyellow;
-    flex-shrink: 1;
+    /* flex-shrink: 1;
     order: 2;
-    flex-basis: 50px;
+    flex-basis: 50px; */
+    /* flex-grow: 1; */
+    flex: 1 0 200px;
 }
 .b2{
     background-color: rgb(234, 131, 7);
-    flex-shrink: 2;
+    /* flex-shrink: 2;
     order: 1;
-    flex-basis: 50px;
+    flex-basis: 50px; */
+    /* flex-grow: 2; */
+    flex: 0 0 200px;
 }
 .b3{
     background-color: rgb(133, 133, 75);
-    flex-shrink: 3;
+    /* flex-shrink: 3;
     order: 3;
-    flex-basis: 50px;
+    flex-basis: 50px; */
+    /* flex-grow: 1; */
+    flex: 2 0 200px;
 }
