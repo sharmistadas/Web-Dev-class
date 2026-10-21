@@ -1,0 +1,13 @@
+.Container{
+    height: 700px;
+    width: 800px;
+    background-color: rgb(193, 223, 213);
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: 100px 300px ;
+    gap: 30px;
+}
+.box{
+    background-color: blue;
+}
